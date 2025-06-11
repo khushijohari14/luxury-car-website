@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Collection | EliteDrive</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .collection-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .car-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .car-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .car-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .car-info {
+      padding: 15px;
+    }
+
+    .car-info h3 {
+      margin: 0;
+      font-size: 1.3rem;
+    }
+
+    .request-btn-container {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .request-btn {
+      padding: 15px 30px;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .request-btn:hover {
+      background-color: #444;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Our Collection</h1>
+  </header>
+
+  <div class="collection-container" id="collection">
+    <!-- Car Cards Injected by JS -->
+  </div>
+
+<div class="request-btn-container text-center my-5">
+  <button 
+    onclick="window.location.href='requestpage.html'" 
+    class="btn btn-dark px-5 py-3 rounded-pill shadow-lg fs-4">
+    <B>Send a Request for a Car</B>
+  </button>
+</div>
+
+
+
+
+  <script>
+    const cars = [
+      { name: "Raptor GT", img: "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d" },
+      { name: "R Velocity", img: "https://thumbs.dreamstime.com/b/detroit-michigan-usa-january-cadillac-opulent-velocity-concept-detroit-auto-show-displays-future-electrical-performance-375103297.jpg" },
+      { name: "R Phantom", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa5qcu2x3GgYTISTg17vr3DktTcXEx96M6Fg&s" },
+      { name: "R Hyper", img: "https://images.unsplash.com/photo-1504215680853-026ed2a45def" },
+      { name: "R Xtreme", img: "https://www.shutterstock.com/image-photo/tangerang-indonesia-07-24-2024-260nw-2507008993.jpg" },
+      { name: "R Sonic", img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3obRch3x2m4UX-O2qRXGo9ydKXZTe7OIZJQ&s" },
+      { name: "R Blaze", img: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf" },
+      { name: "R Thunder", img: "https://preview.redd.it/polestar-3-thunder-pictures-v0-nsfyta4gkzee1.jpeg?width=4032&format=pjpg&auto=webp&s=90f72027668d4fa76a44f7e9c1217e750f6114bf" },
+      { name: "R Nova", img: "https://images.unsplash.com/photo-1526726538690-5cbf956ae2fd" },
+      { name: "R Shadow", img: "https://images.unsplash.com/photo-1570129477492-45c003edd2be" },
+      { name: "R Flame", img: "https://www.carscoops.com/wp-content/uploads/2020/11/Nissan-GT-R-Fire.jpg" },
+      { name: "R Storm", img: "https://images.unsplash.com/photo-1503376780353-7e6692767b70" },
+      { name: "R Bolt", img: "https://images.unsplash.com/photo-1518458028785-8fbcd101ebb9" },
+      { name: "R Titan", img: "https://www.carscoops.com/wp-content/uploads/2015/10/Nissan-GT-R-Nismo-N-Attack-0.jpg" },
+      { name: "R Eclipse", img: "https://www.carscoops.com/wp-content/uploads/2013/12/2015-Mitsubishi-R-Eclipse-Study-4.jpg" }
+    ];
+
+    const container = document.getElementById('collection');
+
+    cars.forEach(car => {
+      const card = document.createElement('div');
+      card.className = 'car-card';
+      card.innerHTML = `
+        <img src="${car.img}" alt="${car.name}">
+        <div class="car-info">
+          <h3>${car.name}</h3>
+        </div>
+      `;
+      container.appendChild(card);
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EliteDrive - Design</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    .hero-section {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://www.carbontouch.eu/image/catalog/blog/carbon%20fiber%20car%20interior800x400.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    .hero-section h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .content-section {
+      padding: 60px 20px;
+    }
+
+    .feature-box {
+      padding: 30px;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-icon {
+      font-size: 40px;
+      color: #007bff;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero-section">
+    <h1>Exquisite Design</h1>
+    <p>Where every line, every stitch, every curve matters.</p>
+  </section>
+
+  <section class="container content-section">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="feature-box text-center">
+          <div class="feature-icon">🎨</div>
+          <h4>Aerodynamic Structure</h4>
+          <p>Shaped in wind tunnels to achieve flawless performance and eye-catching elegance.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-box text-center">
+          <div class="feature-icon">⚙️</div>
+          <h4>Carbon Fiber Detailing</h4>
+          <p>Lightweight strength and modern aesthetics blended into the car's soul.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-box text-center">
+          <div class="feature-icon">🪡</div>
+          <h4>Custom Interior Stitching</h4>
+          <p>Precision-crafted interiors designed for a luxurious driving experience.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Back Button -->
+  <div class="text-center mb-5">
+    <a href="index.html" class="btn btn-dark">← Back to Home</a>
+  </div>
+
+  <script>
+    document.querySelectorAll('.feature-box').forEach((box) => {
+      box.addEventListener('click', () => {
+        alert('More design insights coming soon!');
+      });
+    });
+  </script>
+
+</body>
+</html>

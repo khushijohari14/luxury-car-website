@@ -1,0 +1,74 @@
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.9);
+  transition: background-color 0.3s ease;
+}
+
+.custom-navbar {
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px 0;
+  }
+  .carousel-item img {
+  height: 80vh; /* You can reduce this value as needed (e.g., 60vh, 50vh) */
+  object-fit: cover;
+}
+.carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: auto;
+}
+
+  
+  .custom-navbar.scrolled {
+    background-color: #111; /* Replace with your site theme color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .text-gold {
+    color: gold !important;
+  }
+  
+  .nav-link:hover {
+    color: white !important;
+  }
+.small-card {
+  max-width: 270px;
+  margin: auto;
+  font-size: 0.9rem;
+}
+
+.small-card .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.feature-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.feature-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 4px solid #333;
+}
+
+.feature-link:hover .feature-img {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.feature-box {
+  transition: transform 0.3s ease;
+}
+
+.feature-link:hover .feature-box {
+  transform: translateY(-5px);
+}
+
+
+
+
+

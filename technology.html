@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EliteDrive - Technology</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f7f7f7, #e2e2e2);
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .tech-header {
+      background: url('https://images.hindustantimes.com/auto/img/2024/04/04/1600x900/360_camera_1685853146406_1712214852060.jpeg') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+    }
+
+    .tech-header h1 {
+      font-size: 4rem;
+    }
+
+    .section-title {
+      margin: 50px 0 20px;
+      text-align: center;
+    }
+
+    .feature-box {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+      padding: 25px;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-img {
+      border-radius: 12px;
+      max-height: 250px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    ul.custom-list li::before {
+      content: "✔️ ";
+      margin-right: 8px;
+      color: green;
+    }
+
+    .btn-dark {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border-radius: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="tech-header">
+    <h1>Smart. Intuitive. Elite.</h1>
+  </header>
+
+  <!-- Technology Features Section -->
+  <section class="container py-5">
+    <div class="section-title">
+      <h2>Cutting-Edge Technology</h2>
+      <p class="text-muted">Experience innovation at your fingertips</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="feature-box">
+          <img src="https://cdn.mos.cms.futurecdn.net/RbazHhVor4Twzsuuoh9cmm.jpg" alt="Infotainment" class="feature-img mb-3">
+          <h4>AI Infotainment System</h4>
+          <ul class="custom-list">
+            <li>15” touch display with voice assistant</li>
+            <li>Real-time traffic & weather updates</li>
+            <li>Seamless smartphone integration</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="feature-box">
+          <img src="https://images.hindustantimes.com/auto/img/2024/04/04/600x338/360_camera_1685853146406_1712214852060.jpeg" alt="360 Sensors" class="feature-img mb-3">
+          <h4>360° Parking Sensors</h4>
+          <ul class="custom-list">
+            <li>Full coverage camera system</li>
+            <li>Parking assistance with auto braking</li>
+            <li>Night vision and blind-spot alerts</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="feature-box mt-4">
+          <img src="https://www.v3cars.com/media/content/352322adaptive-cruise-control.webp" alt="Cruise Control" class="feature-img mb-3">
+          <h4>Adaptive Cruise Control</h4>
+          <ul class="custom-list">
+            <li>Automatic speed adjustment based on traffic</li>
+            <li>Lane centering and stop-go capability</li>
+            <li>Enhanced driver comfort for long journeys</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back Button -->
+  <div class="text-center mb-5">
+    <a href="index.html" class="btn btn-dark">← Back to Home</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
